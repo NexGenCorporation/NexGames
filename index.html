@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGames • Home</title>
+    <style>
+        /* Reset i osnovni stilovi - Potpuno tamna tema i oštre ivice */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-radius: 0 !important; /* Strogo zabranjeni zaobljeni uglovi */
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navigacija */
+        header {
+            background-color: #141414;
+            border-bottom: 2px solid #262626;
+            padding: 15px 20px;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Oštar, kockasti tekstualni logo koji prati NexGen estetiku */
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            background-color: #ffffff;
+            color: #0d0d0d;
+            padding: 2px 6px;
+            margin-right: 2px;
+        }
+
+        .nav-links a {
+            color: #aaaaaa;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Glavni sadržaj */
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .hero-section {
+            background-color: #141414;
+            border: 2px solid #262626;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        .hero-section h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-section p {
+            color: #aaaaaa;
+            max-width: 700px;
+            font-size: 16px;
+        }
+
+        /* Sekcija sa igrama */
+        .section-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ffffff;
+            padding-left: 10px;
+        }
+
+        /* Kartica za igru - Oštra i stabilna */
+        .game-card {
+            background-color: #141414;
+            border: 2px solid #262626;
+            display: flex;
+            flex-direction: column;
+            max-width: 450px;
+        }
+
+        .game-details {
+            padding: 25px;
+        }
+
+        .game-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .game-status {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            background-color: #262626;
+            color: #00ff66;
+            padding: 2px 8px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .game-description {
+            color: #aaaaaa;
+            font-size: 14px;
+            margin-bottom: 25px;
+            min-height: 65px;
+        }
+
+        /* Dugme bez prelaza i zaobljenja */
+        .btn-play {
+            display: block;
+            background-color: #ffffff;
+            color: #0d0d0d;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 12px;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 2px solid #ffffff;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .btn-play:hover {
+            background-color: #0d0d0d;
+            color: #ffffff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #141414;
+            border-top: 2px solid #262626;
+            padding: 30px 20px;
+            margin-top: 80px;
+            font-size: 13px;
+            color: #666666;
+        }
+
+        .footer-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left span {
+            color: #999999;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigacija -->
+    <header>
+        <div class="nav-container">
+            <div class="logo"><span>Nex</span>Games</div>
+            <nav class="nav-links">
+                <a href="#games">Games</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Glavni sadržaj -->
+    <main>
+        
+        <!-- Hero sekcija -->
+        <section class="hero-section">
+            <h1>Revolutionary Gaming Tech</h1>
+            <p>Welcome to the official gaming hub of NexGen Corp. We focus on lightweight, high-performance, and purely functional simulations designed to run perfectly on any hardware configuration.</p>
+        </section>
+
+        <!-- Sekcija sa projektima -->
+        <section id="games">
+            <h2 class="section-title">Our Projects</h2>
+            
+            <!-- Kartica za igru sa novim dpdns.org domenom -->
+            <div class="game-card">
+                <div class="game-details">
+                    <div class="game-title">Apex Bank Management Simulator</div>
+                    <div class="game-status">Active</div>
+                    <p class="game-description">Take absolute control over network financial systems. Manage accounts, scale infrastructure, and simulate real-time banking operations under full load.</p>
+                    <a href="https://nxgame-apxbnksim.nxgcorp.dpdns.org" class="btn-play" target="_blank">Launch Simulation</a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <span>NexGen Corp.</span> • 2026 • All Rights Reserved.
+            </div>
+            <div class="footer-right">
+                Lightweight Build v1.0.1
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
